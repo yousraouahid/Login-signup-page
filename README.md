@@ -10,6 +10,8 @@ if you click on Login you will be taken to the login page which provides a basic
 
 if you click on Sign up you will be taken to the sign up page where you can create a new account.
 
+![signup](https://github.com/yousraouahid/Login-signup-page/assets/116839478/b6855d50-cec3-444d-9919-f579b6f8fb70)
+
 
 # Technologies Used
 HTML, CSS, JavaScript.
