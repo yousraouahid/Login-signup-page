@@ -12,6 +12,7 @@ if you click on Sign up you will be taken to the sign up page where you can crea
 
 ![signup](https://github.com/yousraouahid/Login-signup-page/assets/116839478/b6855d50-cec3-444d-9919-f579b6f8fb70)
 
+Overall, this project aims to create an engaging and user-friendly Sign Up/Log In page with visually appealing design elements and seamless navigation between the login and signup processes.
 
 # Technologies Used
 HTML, CSS, JavaScript.
