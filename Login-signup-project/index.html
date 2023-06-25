@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,400&family=Ysabeau+Infant:ital,wght@1,500&family=Ysabeau+SC&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="motif.png">
+       <style>
+         body {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+      
+        #left {
+            flex: 1;
+            padding: 165px;
+           background-color: #73B9D6;
+        }
+        #right {
+            flex: 1;
+            padding: 165px;
+            display: flex;
+            background-image: url('https://i.pinimg.com/564x/89/af/ee/89afeea07f09c792b40ba026f0539101.jpg');
+            background-size: 740px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        #id1 {
+           padding: 100px;
+           opacity: 0.9;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+           
+       }
+        #welcome {
+            font-family: 'Ysabeau SC', sans-serif;
+            font-size: 63px;
+            color: white;
+            position: absolute;
+            top: 23%;
+        }
+        
+        #connect {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            color: #FF0065;
+            margin-bottom: 40px;
+            position: absolute;
+            top: 55%;
+        }
+        
+        #buttons {
+           display: flex;
+           flex-direction: column;
+           padding: 130px;
+           background-color: rgba(28, 28, 57, 0.3);
+           border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        #login,
+        #signup {
+            margin: 0 0 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #73B9D6 0%, #FF0065 100%); 
+            color: white;
+            font-size: 16px;
+            border: none;
+            width: 180px;
+            height: 40px;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+            border-radius: 6px;
+        
+          
+        }
+        
+        #signup:hover,
+        #login:hover {
+            color:#FF0065;
+        }
+        #join{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            position: absolute;
+            top: 15%;
+           right: 33%;
+           transform: translateY(-50%);
+        }
+        #connection{
+            font-family: 'Ysabeau SC', sans-serif;
+            color: white;
+            position: absolute;
+            top: 30%;
+           right: 17.5%;
+           transform: translateY(-50%);
+        }
+        #left{
+               background-image: url(motif.png);
+               background-attachment: fixed; 
+               background-repeat: no-repeat; 
+               background-position: top left;
+               background-size: 100px 100px;
+
+        }
+      
+    </style>
+    <script>
+        document.getElementById("login").addEventListener("click", GoLogin);
+
+function GoLogin() {
+  window.location.href = "loginpage.html";
+}
+    document.getElementById("signup").addEventListener("click", GoSignup);
+    function GoSignup(){
+        window.location.href = "signup-page.html";
+    }
+    </script>
+</head>
+<body>
+    <div id="left">
+        
+        <div id="id1">
+            <p id="welcome">Welcome to my Sign Up/Log In page!</p>
+            <p id="connect">Let's get connected!</p>
+        </div>
+    </div>
+    
+    <div id="right">
+        <p id="join">Join us :</p>
+        <br>
+        <p id=connection>Explore your connection options :</p>
+        <div id="buttons">
+            <button type="button" id="login" onclick=GoLogin()>Log In</button>
+            <button type="button" id="signup" onclick=GoSignup()>Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="motif.png">
+    <style>
+        body {
+            background-image: url(backgr.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #register {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 49px;
+            background-color: rgba(28, 28, 57, 0.3);
+            color: white;
+            width: 550px;
+            height: 483.84px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        input {
+            height: 30px;
+            background-color: white;
+            border-radius: 4px;
+            padding: 0 16px;
+            border: 2px solid transparent;
+            font-size: 16px;
+            width: 250px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        label {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            padding: 5px;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        #submit {
+            margin: 10px 0;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #73B9D6 0%, #FF0065 100%);
+            color: white;
+            font-size: 16px;
+            border: none;
+            width: 200px;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #submit:hover {
+            color: #FF0065;
+            background: linear-gradient(135deg, #73B9D6 0%, #FF0065 80%);
+        }
+
+        #motif {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 12px;
+            cursor:pointer;
+        }
+    </style>
+    <script>
+        document.getElementById("motif").addEventListener("click", GoHome);
+    
+    function GoHome() {
+    window.location.href = "index.html";
+    }
+    
+    </script>
+</head>
+<body>
+    <img src="motif.png" id="motif" alt="logo" onclick=GoHome()>
+    <div id="register">
+        <form method="POST" >
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="user" placeholder="Enter your username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email address" placeholder="Enter your email" required>
+
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your number" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"required>
+
+            <label for="dateBirth">Birth Date:</label>
+            <input type="datetime" id="dateBirth" name="birth" placeholder="day-month-year">
+
+            <label for="address">Address:</label>
+            <input type="textarea" id="address" name="address" placeholder="Enter your address" required>
+
+            <button type="button" name="signup" id="submit" >Sign Up</button>
+            <a href="Loginpage.html" id="signup">Already have an account? Log in</a>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

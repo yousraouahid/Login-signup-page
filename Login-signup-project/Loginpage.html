@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="motif.png">
+<style>
+    body {
+        background-image: url(backgr.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #access {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 90px;
+        background-color: rgba(28, 28, 57, 0.3);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        width:350px;
+        height:350px;
+    }
+
+    #login {
+        margin: 10px 0;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        background: linear-gradient(135deg, #73B9D6 0%, #FF0065 100%);
+        color: white;
+        font-size: 16px;
+        border: none;
+        width: 170px;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #login:hover {
+        color: #FF0065;
+        background: linear-gradient(135deg, #73B9D6 0%, #FF0065 80%);
+    }
+
+    #motif {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    td {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        padding: 5px;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    #Email[type="text"] {
+        max-width: 190px;
+        height: 44px;
+        background-color: white;
+        border-radius: 8px;
+        padding: 0 16px;
+        border: 2px solid transparent;
+        font-size: 16px;
+    }
+
+    #password[type="password"] {
+        max-width: 190px;
+        height: 44px;
+        background-color: white;
+        border-radius: 8px;
+        padding: 0 16px;
+        border: 2px solid transparent;
+        font-size: 16px;
+    }
+</style>
+<script>
+    document.getElementById("motif").addEventListener("click", GoHome);
+
+function GoHome() {
+window.location.href = "index.html";
+}
+
+</script>
+</head>
+<body>
+    <img src="motif.png" id="motif" alt="logo" onclick=GoHome()>
+    <div id="access">
+        <form method="post" id="login-form">
+            <table>
+                <tr>
+                    <td id="label1">Email:</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="Email" name="mail" required placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td id="label2">Password:</td>
+                </tr>
+                <tr>
+                    <td><input type="password" id="password" name="password" required placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="agree" name="terms" required>I agree to the terms of Use & Privacy policy</td>
+                </tr>
+                <tr>
+                    <td><button id="login" type="submit">Log in</button></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><a href="Signup-page.html" id="signup">Not a user? Sign up</a></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
